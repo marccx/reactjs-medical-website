@@ -2,9 +2,12 @@ import React from "react";
 
 const Careers = () => {
   return (
-    <div className="carreers-wrapper">
-      <div className="header">
-        <h1 className="mt-3 mb-4 section-title">Clinica noastră se extinde</h1>
+    <section>
+      <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+        <div className="header">
+        <h1 className="mb-5 section-title">Clinica noastră se extinde</h1>
       </div>
       <div className="careers-section">
         <p>
@@ -28,7 +31,10 @@ const Careers = () => {
           <span className="careers-email"> pneumotherapy@yahoo.com</span>
         </p>
       </div>
+        </div>
+      </div>
     </div>
+    </section>
   );
 };
 

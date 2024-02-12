@@ -25,7 +25,8 @@ const TeamMember = ({ imageSrc, name, description }) => (
 
 const OurTeam = () => {
   return (
-    <div
+   <section className="bg-white">
+     <div
       className="our-team our-team-wrapper container-fluid"
       id="our-team"
       data-aos="fade-up"
@@ -87,6 +88,7 @@ const OurTeam = () => {
         />
       </Carousel>
     </div>
+   </section>
   );
 };
 

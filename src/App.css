@@ -5,14 +5,12 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-image: linear-gradient(to bottom, #d2f5fc2a, #00b4d81e);
 }
 
-.about-section,
-.find-us-section,
-.our-services {
-  padding-top: 50px;
+section {
+  padding: 80px 0;
 }
 
 /* Topbar */
@@ -24,11 +22,14 @@ body {
 }
 
 .contact-info a {
+  color: #000;
+  font-size: 14px;
   text-decoration: none;
 }
 
 .contact-info a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #1977cc;
 }
 
 .social-links {
@@ -37,6 +38,7 @@ body {
 
 .social-links a {
   color: #437099 !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .social-links a:hover {
@@ -53,14 +55,14 @@ body {
 
 /* Navbar section */
 .navbar-nav .nav-item a {
-  color: hsl(204, 100%, 50%);
+  color: #000;
   font-weight: 500;
   text-decoration: none;
 }
 
 .navbar-nav .nav-item a:hover {
   color: hsl(204, 76%, 27%);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .topbar {
@@ -80,6 +82,7 @@ body {
 .appointment-button {
   background: #1977cc;
   color: #fff !important;
+  font-size: 14px;
   border-radius: 50px;
   margin-left: 10px;
 }
@@ -106,15 +109,35 @@ body {
 /* Header section */
 .header-container {
   background-image: url("assets/img/mainheader-logo.webp");
-  height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.header-container::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+/* Little fix for the above selector */
+.header-container .container {
+  position: relative;
+  z-index: 9;
 }
 
 .header-h1 {
-  text-transform: uppercase;
-  color: #00223d !important;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #fff !important;
 }
 
 .btn-get-started {
@@ -122,9 +145,8 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
   padding: 12px 35px;
   border-radius: 50px;
@@ -135,34 +157,36 @@ body {
   text-align: center;
 }
 
-.btn-get-started:hover {
-  background: #1c006e;
+.about-wrapper {
+  background-color: #def8fb;  
 }
 
-.header-h1-btn-wrapper {
-  padding-top: 10rem;
-  padding-left: 5rem;
+.btn-get-started:hover {
+  background: #1c006e;
 }
 
 /* about section */
 .section-title {
   text-align: center;
   color: #1977cc;
+  font-weight: 600;
+  font-size: 42px;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
 .about-p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .cabinet-img {
-  max-width: 550px !important;
   width: 100%;
   max-height: 380px !important;
+  object-fit: cover;
+  object-position: center;
   height: 100% !important;
 }
 
@@ -174,15 +198,14 @@ p {
 }
 
 .findus-p {
-  font-size: 22px;
+  font-size: 18px;
   order: 1px solid lightgray;
-  padding: 5px;
-  min-height: 170px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .findus-span {
@@ -191,12 +214,8 @@ p {
 
 .findus-card {
   background-color: #b9d9f4;
-  padding: 20px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 1px 1px;
+  padding: 50px;
   border-radius: 20px 100px;
-  margin-bottom: 20px;
-  height: 300px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -206,10 +225,6 @@ p {
 
 .right-card {
   border-radius: 100px 20px;
-}
-
-.findus-card:hover {
-  transform: translateY(-5px);
 }
 
 /* services section */
@@ -247,9 +262,7 @@ p {
 }
 
 /* our team section */
-.our-team {
-  margin-top: 50px;
-}
+
 
 .our-team-h2 {
   margin-bottom: 40px;
@@ -288,7 +301,6 @@ p {
 /* testimonials section */
 .testimonials-title {
   margin-bottom: 40px;
-  margin-top: 30px;
 }
 
 .card-img {
@@ -314,18 +326,22 @@ p {
 }
 
 /* footer */
-.footer {
+footer {
+  padding: 60px 0;
   background-color: #001148;
   color: #fff;
-  margin-top: 50px;
 }
 
-.footer .footer-phone {
+footer a {
+  color: #1977cc;
+}
+
+footer .footer-phone {
   color: #fff;
   display: inline !important;
 }
 
-.footer .footer-phone:hover {
+footer .footer-phone:hover {
   text-decoration: underline !important;
   color: #1977cc !important;
 }
@@ -338,7 +354,6 @@ p {
 
 /* Careers */
 .careers-section {
-  padding: 1rem;
   color: #00223d;
 }
 
@@ -387,6 +402,32 @@ p {
   display: none;
 }
 
+.wheretofindus {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.wheretofindus::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+.wheretofindus .findus-wrapper {
+  position: relative;
+  z-index: 9;
+}
+
+.findus-wrapper .section-title {
+  margin-bottom: 50px;
+  color: #fff;
+}
+
 /* Styling for the team member slides */
 .dr-member {
   display: flex;
@@ -394,7 +435,6 @@ p {
   align-items: center;
   gap: 30px;
   justify-content: center;
-  padding: 20px;
   border-radius: 10px;
   transition: transform 0.2s ease-in-out;
 }
@@ -450,10 +490,6 @@ p {
   text-align: center;
 }
 
-/*  */
-.our-team {
-  margin-top: 50px;
-}
 
 .our-team-h2 {
   margin-bottom: 40px;
@@ -486,16 +522,18 @@ p {
   margin-bottom: 0;
 }
 
+.bg-white {
+  background: #f2f2f2;
+}
+
 .our-team a {
   text-decoration: none;
 }
 
 .dr-member {
-  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #fff;
 }
 
 .dr-paragraph {
@@ -513,6 +551,7 @@ p {
 
 .navbar-nav .nav-item a {
   padding: 8px;
+  font-size: 14px;
 }
 
 /* Prices section starts */
@@ -578,11 +617,7 @@ p {
 
 @media screen and (max-width: 991px) {
   .navbar-nav .nav-item a {
-    padding: 2px;
-  }
-
-  .caca {
-    background-image: linear-gradient(to bottom, #d2f5fc2a, #00b4d81e);
+    padding: 5px 0;
   }
 
   #topbar {
@@ -669,7 +704,7 @@ p {
   }
 
   .header-h1-btn-wrapper {
-    padding-top: 10rem;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;

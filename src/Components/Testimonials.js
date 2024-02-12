@@ -5,7 +5,8 @@ import person3 from "../assets/img/person3.png"; // Import the image
 
 const Testimonials = () => {
   return (
-    <div
+    <section>
+      <div
       className="testimonials-section container"
       data-aos="fade-up"
       data-aos-duration="1000"
@@ -60,6 +61,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

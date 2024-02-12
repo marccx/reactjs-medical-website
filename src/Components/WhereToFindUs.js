@@ -3,7 +3,9 @@ import React from "react";
 
 const WhereToFindUs = () => {
   return (
-    <div
+    <section className="wheretofindus" style={{backgroundImage: `url(${findus})`}}
+    alt="person browsing google maps">
+      <div
       className="container-fluid findus-wrapper"
       data-aos="fade-up"
       data-aos-duration="1000"
@@ -13,11 +15,6 @@ const WhereToFindUs = () => {
           <div className="row align-items-center justify-content-center text-center">
             <div className="col-12">
               <h2 className="section-title">Unde ne puteți gãsi</h2>
-              <img
-                className="img-fluid rounded findus-img mb-4"
-                src={findus}
-                alt="person browsing google maps"
-              />
             </div>
             <div className="col-md-6">
               <div className="findus-card">
@@ -40,9 +37,8 @@ const WhereToFindUs = () => {
                   </span>
                   , iar cealaltă la adresa{" "}
                   <span className="findus-span">
-                    Islaz, str. Dunării nr. 71, jud Teleorman
+                    Islaz, str. Dunării nr. 71, jud Teleorman.
                   </span>
-                  .
                 </p>
               </div>
             </div>
@@ -50,6 +46,7 @@ const WhereToFindUs = () => {
         </h2>
       </div>
     </div>
+    </section>
   );
 };
 

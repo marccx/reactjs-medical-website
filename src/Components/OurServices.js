@@ -9,12 +9,7 @@ import { Link } from "react-router-dom";
 
 const OurServices = () => {
   return (
-    <div
-      className="container-fluid services-wrapper"
-      id="services-wrapper"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-    >
+    <section>
       <div
         className="container our-services"
         data-aos="fade-up"
@@ -32,7 +27,7 @@ const OurServices = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
             <p className="service-title">Consult medical pneumologic</p>
             <img
               className="img-fluid rounded services-img"
@@ -40,7 +35,7 @@ const OurServices = () => {
               alt="doctor's appointment"
             />
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
             <p className="service-title">Fișă auto și consult psihologic</p>
             <img
               className="img-fluid rounded services-img"
@@ -48,13 +43,7 @@ const OurServices = () => {
               alt="driving's license medical exam"
             />
           </div>
-        </div>
-        <div
-          className="row text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
             <p className="service-title">Pulsoximetrie</p>
             <img
               className="img-fluid rounded services-img"
@@ -62,7 +51,7 @@ const OurServices = () => {
               alt="doctor's appointment"
             />
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
             <p className="service-title">Consult apnee</p>
             <img
               className="img-fluid rounded services-img"
@@ -70,13 +59,7 @@ const OurServices = () => {
               alt="driving's license medical exam"
             />
           </div>
-        </div>
-        <div
-          className="row text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
             <p className="service-title">Spirometrie</p>
             <img
               className="img-fluid rounded services-img"
@@ -84,7 +67,7 @@ const OurServices = () => {
               alt="doctor's appointment"
             />
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
             <p className="service-title">Terapii complementare</p>
             <img
               className="img-fluid rounded services-img"
@@ -92,17 +75,14 @@ const OurServices = () => {
               alt="driving's license medical exam"
             />
           </div>
+        </div>
           <p className="more-services-list mb-0">
-            Click{" "}
             <span className="services-link">
-              <Link to="/prices">aici</Link> {/* Replace <a> with <Link> */}
+              <Link className="btn-get-started" to="/prices">Preturi Servicii</Link> {/* Replace <a> with <Link> */}
             </span>{" "}
-            pentru o listǎ completǎ cu serviciile cât si cu prețurile oferite de
-            catre noi.
           </p>
         </div>
-      </div>
-    </div>
+    </section>
   );
 };
 
