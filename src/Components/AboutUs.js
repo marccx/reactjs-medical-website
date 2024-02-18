@@ -4,16 +4,16 @@ import cabinet1Image from "../assets/img/cabinet1.webp"; // Import the image
 
 const AboutUs = () => {
   return (
-  <section className="about-wrapper">
+  <section className="about-wrapper" id="about">
       <div
       className="container-fluid"
       data-aos="fade-up"
       data-aos-duration="1000"
     >
-      <div className="container about-section" id="about">
+      <div className="container about-section">
         <div className="row align-items-center">
         
-          <div className="col-6">
+          <div className="col-md-6">
             <h2 className="about-h2 text-start section-title">Cine suntem</h2>
             <p className="about-p">
               Conceptul modern aplicat în tratarea fiecărui caz asigura
@@ -27,7 +27,7 @@ const AboutUs = () => {
               viață sănătos și echilibrat fizic și emoțional.
             </p>
           </div>
-          <div className="col-6 d-flex flex-column">
+          <div className="col-md-6 d-flex flex-column">
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3 mt-xs-2">
             <img
               className=" rounded cabinet-img img-fluid"

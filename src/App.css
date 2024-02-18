@@ -12,7 +12,13 @@ body {
 section {
   padding: 80px 0;
 }
-
+.accordion-header h4 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.accordion-body p:last-of-type {
+  margin-bottom: 0;
+}
 /* Topbar */
 #topbar {
   padding: 5px;
@@ -25,6 +31,10 @@ section {
   color: #000;
   font-size: 14px;
   text-decoration: none;
+  font-weight: 500;
+}
+.contact-info a {
+  margin-left: 5px;
 }
 
 .contact-info a:hover {
@@ -98,12 +108,14 @@ section {
   font-size: 22px;
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
+.navbar-toggler:focus,
 .navbar-toggler:hover {
-  border: 3px solid #86c7ff;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+.navbar-toggler {
+  border: navajowhite;
 }
 
 /* Header section */
@@ -144,7 +156,6 @@ section {
   line-height: 1.5;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -221,6 +232,7 @@ p {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.176);
 }
 
 .right-card {
@@ -253,7 +265,7 @@ p {
 
 #services-wrapper .services-link a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 #services-wrapper .services-link a:hover {
@@ -338,12 +350,40 @@ footer a {
 
 footer .footer-phone {
   color: #fff;
+  font-size: 14px;
   display: inline !important;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.footer-mail {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
 }
 
-footer .footer-phone:hover {
+footer .footer-phone:hover,
+.footer-mail:hover {
   text-decoration: underline !important;
   color: #1977cc !important;
+}
+.agency {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.5;
+}
+.copyright-area {
+  margin-top: 50px;
+  margin-bottom: -30px;
+}
+.copyright-area p {
+  font-size: 14px;
+}
+.testimonial-p {
+  padding: 0 20px;
+}
+.follow-p svg {
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 /* FAQ Section */
@@ -558,7 +598,6 @@ footer .footer-phone:hover {
 .prices-section-wrapper p {
   margin-bottom: 0;
   font-size: 22px;
-  font-weight: 300;
   color: #1f6698;
 }
 
@@ -672,6 +711,31 @@ footer .footer-phone:hover {
   .findus-card {
     height: 100%;
   }
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 20px !important;
+  }
+  .copyright-area p { 
+    text-align: center;
+  }
+  .btn-get-started {
+    padding: 10px 20px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .findus-card {
+    margin-bottom: 30px;
+  }
+  footer {
+    padding-top: 30px;
+  }
+  .copyright-area {
+    margin-top: 20px;
+  }
+  .accordion-header h4 {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -690,7 +754,7 @@ footer .footer-phone:hover {
   }
 
   p {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 }
 

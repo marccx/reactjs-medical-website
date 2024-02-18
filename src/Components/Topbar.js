@@ -13,14 +13,20 @@ const Topbar = () => {
     <div className="topbar">
       <div id="topbar" className="d-flex align-items-center">
         <div className="container d-flex justify-content-between">
-          <div className="contact-info d-flex align-items-center">
-            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#3fbbc0" }} />
-            <a href="mailto:pneumotherapy@yahoo.com">pneumotherapy@yahoo.com</a>
+          <ul className="contact-info d-flex align-items-center list-unstyled mb-0">
+           <li>
+           <FontAwesomeIcon icon={faEnvelope} style={{ color: "#3fbbc0" }} />
+           <a href="mailto:pneumotherapy@yahoo.com">pneumotherapy@yahoo.com</a>
+           </li>
+            <li>
             <FontAwesomeIcon icon={faPhone} style={{ color: "#3fbbc0" }} />{" "}
             <a href="tel:0725596895">0725 596 895</a>
+            </li>
+            <li>
             <FontAwesomeIcon icon={faPhone} style={{ color: "#3fbbc0" }} />{" "}
             <a href="tel:0724284956">0724 284 956</a>
-          </div>
+            </li>
+          </ul>
 
           <div className="d-lg-flex social-links align-items-center">
             <a

@@ -11,7 +11,8 @@ const Footer = () => {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center">
             <h4>Centrul Medical Ali Cranta</h4>
             <p>Strada Doctor Leonte Anastasievici nr 11 Sector 5, Bucuresti</p>
-            <p className="footer-phone mb-0">
+            <ul className="d-flex flex-column list-unstyled">
+            <li>
               {" "}
               <FontAwesomeIcon
                 icon={faPhone}
@@ -24,8 +25,8 @@ const Footer = () => {
               >
                 0725 596 895
               </a>
-            </p>
-            <p className="footer-phone mb-0">
+            </li>
+            <li>
               {" "}
               <FontAwesomeIcon
                 icon={faPhone}
@@ -38,22 +39,24 @@ const Footer = () => {
               >
                 0724 284 956
               </a>
-            </p>
-            <p className="footer-mail">
+            </li>
+            <li>
               <FontAwesomeIcon icon={faEnvelope} style={{ color: "#3fbbc0" }} />{" "}
-              <a href="mailto:pneumotherapy@yahoo.com">
+              <a className="footer-mail" href="mailto:pneumotherapy@yahoo.com">
                 pneumotherapy@yahoo.com
               </a>
-            </p>
+            </li>
+            </ul>
+            
             <p className="schedule-title mb-0">Program:</p>
             <p className="schedule-hours">Luni-Vineri: 08:00 – 21:00</p>
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 text-center facebook-widget">
-            <FontAwesomeIcon
+            
+            <p className="follow-p px-1"><FontAwesomeIcon
               icon={faFacebook}
               style={{ color: "#3fbbc0", fontSize: "24px" }}
-            />
-            <p className="follow-p px-1">Urmareste-ne pe Facebook:</p>
+            />Urmareste-ne pe Facebook:</p>
 
             <div className="iframe-container">
               <iframe
@@ -95,16 +98,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="row mt-4">
-          <div className="col-md-12 text-center">
-            <p>
+        <div className="row copyright-area">
+          <div className="col-md-6">
+            <p className="mb-0">
               &copy; 2023 AliCranta Medical Center. Toate drepturile rezervate.
             </p>
-            <p>
-              <a href="https://www.linkedin.com/in/gabriel-mihai-924042234/">
+          </div>
+          <div className="col-md-6 text-center text-md-end">
+            <a href="https://www.linkedin.com/in/gabriel-mihai-924042234/" className="agency">
                 Soluții complete webdesign, site-web / administrare web.
-              </a>
-            </p>
+            </a>
           </div>
         </div>
       </div>

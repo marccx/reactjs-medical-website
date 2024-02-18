@@ -51,8 +51,6 @@ const Faq = () => {
         </div>
         <div
           className="accordion-item"
-          data-aos="fade-up"
-          data-aos-duration="1000"
         >
           <h2 className="accordion-header" id="headingTwo">
             <button
@@ -100,11 +98,11 @@ const Faq = () => {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
-              <p>
+              <p className="mb-3">
                 Nu ezitati sa ne contactati telefonic la numerele de telefon:
               </p>
-              <p>0725 596 895</p>
-              <p>0724 284 595</p>
+              <a className="d-block" href="tel:0725 596 895">0725 596 895</a>
+              <a className="d-block" href="tel:0724 284 595">0724 284 595</a>
             </div>
           </div>
         </div>

@@ -104,7 +104,11 @@ const Prices = () => {
   ];
 
   return (
-    <div className="prices-section-wrapper container">
+    <section>
+      <div className="container">
+      <div className="row">
+      <div className="col-md-12">
+      <div className="prices-section-wrapper container">
       <div className="price-logo-wrapper">
         <img
           className="price-section-logo img-fluid"
@@ -118,7 +122,7 @@ const Prices = () => {
         dedicată vă oferă servicii de top la tarife accesibile, reflectând
         angajamentul nostru pentru calitate și accesibilitate.
       </p>
-      <p className="section-price-description">
+      <p className="section-price-description mb-5">
         Descoperiți oferta noastră și alegeți îngrijirea de calitate la prețuri
         competitive:
       </p>
@@ -138,6 +142,10 @@ const Prices = () => {
         ))}
       </div>
     </div>
+      </div>
+      </div>
+      </div>
+    </section>
   );
 };
 

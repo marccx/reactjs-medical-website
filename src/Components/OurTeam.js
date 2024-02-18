@@ -25,10 +25,9 @@ const TeamMember = ({ imageSrc, name, description }) => (
 
 const OurTeam = () => {
   return (
-   <section className="bg-white">
+   <section className="bg-white" id="our-team">
      <div
       className="our-team our-team-wrapper container-fluid"
-      id="our-team"
       data-aos="fade-up"
       data-aos-duration="1000"
     >
