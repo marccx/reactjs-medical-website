@@ -7,8 +7,6 @@ const WhereToFindUs = () => {
     alt="person browsing google maps">
       <div
       className="container-fluid findus-wrapper"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
       <div className="find-us-section container">
         <h2 className="findus-h2">

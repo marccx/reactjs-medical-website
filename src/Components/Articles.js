@@ -6,8 +6,6 @@ const Articles = () => {
     <section>
       <div
       className="articles-section"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
       <div className="article-img container d-flex align-items-center justify-content-center">
         <img src={tbcLogo} alt="" className="img-fluid rounded text-center" />

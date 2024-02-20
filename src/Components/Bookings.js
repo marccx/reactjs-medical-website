@@ -5,17 +5,18 @@ const Bookings = () => {
   const today = new Date().toISOString().split("T")[0];
 
   return (
+   <section>
+    <div className="container">
+    <div className="row">
     <div
       className="bookings-section"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
-      <h2 className="section-title">Formular de programare online</h2>
+      <h2 className="section-title mb-4">Formular de programare online</h2>
       <p className="bookings-about">
         Mai jos puteți consulta intervalul de lucru al fiecărui medic, înainte
         de a vă programa.
       </p>
-      <table className="table text-center container">
+      <table className="table text-center container mb-5">
         <thead>
           <tr>
             <th scope="col">1</th>
@@ -44,7 +45,7 @@ const Bookings = () => {
           </tr>
         </tbody>
       </table>
-      <h2 className="section-title">Suntem la doar un click distanță.</h2>
+      <h2 className="section-title mb-4">Suntem la doar un click distanță.</h2>
       <div className="container">
         <form
           action="https://formspree.io/f/xoqoovla"
@@ -172,6 +173,9 @@ const Bookings = () => {
         </form>
       </div>
     </div>
+    </div>
+    </div>
+   </section>
   );
 };
 

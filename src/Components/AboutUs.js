@@ -7,8 +7,6 @@ const AboutUs = () => {
   <section className="about-wrapper" id="about">
       <div
       className="container-fluid"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
       <div className="container about-section">
         <div className="row align-items-center">

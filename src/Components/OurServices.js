@@ -12,8 +12,6 @@ const OurServices = () => {
     <section id="services-wrapper">
       <div
         className="container our-services"
-        data-aos="fade-up"
-        data-aos-duration="1000"
       >
         <h2
           className="our-services-h2 section-title"

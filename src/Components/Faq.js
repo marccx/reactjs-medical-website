@@ -3,7 +3,7 @@ import React from "react";
 const Faq = () => {
   return (
     <section>
-      <div className="faq-section" data-aos="fade-up" data-aos-duration="1000">
+      <div className="faq-section">
       <div
         className="accordion container"
         id="accordionExample"

@@ -5,8 +5,8 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer data-aos="fade-up" data-aos-duration="1000">
-      <div className="container" data-aos="fade-up" data-aos-duration="1000">
+    <footer>
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center">
             <h4>Centrul Medical Ali Cranta</h4>

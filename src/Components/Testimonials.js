@@ -8,8 +8,6 @@ const Testimonials = () => {
     <section>
       <div
       className="testimonials-section container"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
       <h2
         className="section-title testimonials-title"

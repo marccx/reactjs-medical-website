@@ -1,6 +1,3 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import the AOS styles
 import "./App.css";
 import Faq from "./Components/Faq";
 import Footer from "./Components/Footer";
@@ -14,9 +11,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 
 function App() {
-  useEffect(() => {
-    AOS.init(); // Initialize AOS
-  }, []);
 
   return (
     <Router>

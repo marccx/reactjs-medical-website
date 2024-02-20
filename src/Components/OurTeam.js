@@ -28,8 +28,6 @@ const OurTeam = () => {
    <section className="bg-white" id="our-team">
      <div
       className="our-team our-team-wrapper container-fluid"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
       <h2
         data-aos="fade-up"

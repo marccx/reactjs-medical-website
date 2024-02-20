@@ -5,8 +5,6 @@ const Header = () => {
     <section className="p-0">
       <div
       className="header-container container-fluid"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
       <div className="container">
       <div className="row">
